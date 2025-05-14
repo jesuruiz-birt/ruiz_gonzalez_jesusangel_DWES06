@@ -1,0 +1,15 @@
+package birt.dwes.app;
+
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+import paymentservice.MicroservicioPaymentApplication;
+
+public class ServletInitializer extends SpringBootServletInitializer {
+
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(MicroservicioPaymentApplication.class);
+	}
+
+}
